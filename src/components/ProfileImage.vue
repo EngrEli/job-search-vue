@@ -2,7 +2,7 @@
   <img
     :src="profilePic"
     alt="Profile Image"
-    class="h-10 w-10 cursor-pointer rounded-full object-cover"
+    class="h-8 w-8 cursor-pointer rounded-full object-cover"
   />
 </template>
 

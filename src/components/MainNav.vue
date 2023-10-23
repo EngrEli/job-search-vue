@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed left-0 top-0 flex w-full items-center justify-between border-b border-brand-gray-1 px-16 py-3"
+    class="fixed left-0 top-0 flex h-16 w-full items-center justify-between border-b border-brand-gray-1 px-16 py-3"
   >
     <div class="flex items-center">
       <h1 class="mb-1 text-xl">
@@ -23,9 +23,11 @@
     </div>
 
     <!-- Clicking the sign in button logs the user in -->
-    <ActionButton v-if="!isLoggedIn" @click="handleLogin" />
+    <ActionButton v-if="!isLoggedIn" @click="handleLogin" text="Sign in" :is-primary="true" />
     <ProfileImage v-else />
   </header>
+
+  <ActionButton text="Search" :is-primary="false" />
 </template>
 
 <script setup>
