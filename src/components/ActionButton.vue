@@ -9,12 +9,15 @@ import { ref, computed } from 'vue'
 
 const props = defineProps({
   text: String,
-  isPrimary: Boolean
+  type: String
 })
 
 const buttonClass = computed(() => {
-  return props.isPrimary ? 'primary' : 'secondary'
-  // return { primary: props.isPrimary, secondary: !props.isPrimary }
+  // return props.isPrimary ? 'primary' : 'secondary'
+  return {
+    primary: props.type === 'primary',
+    secondary: props.type === 'secondary'
+  }
 })
 </script>
 

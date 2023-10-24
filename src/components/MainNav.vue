@@ -23,11 +23,11 @@
     </div>
 
     <!-- Clicking the sign in button logs the user in -->
-    <ActionButton v-if="!isLoggedIn" @click="handleLogin" text="Sign in" :is-primary="true" />
+    <ActionButton v-if="!isLoggedIn" @click="handleLogin" text="Sign in" type="primary" />
     <ProfileImage v-else />
   </header>
 
-  <ActionButton text="Search" :is-primary="false" />
+  <ActionButton text="Search" type="secondary" />
 </template>
 
 <script setup>
