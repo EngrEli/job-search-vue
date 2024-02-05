@@ -10,8 +10,12 @@ module.exports = {
       },
       colors: {
         'brand-gray-1': '#DADCE0',
+        'brand-gray-2': '#F8F9FA',
+        'brand-gray-3': '#80868B',
         'brand-blue-1': '#1967D2',
-        'brand-green-1': '#137333'
+        'brand-blue-2': '#4285F4',
+        'brand-green-1': '#137333',
+        'brand-white': '#FFFFFF'
       },
       boxShadow: {
         blue: '0 0 3px 3px #4285F4'

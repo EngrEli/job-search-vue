@@ -7,16 +7,28 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+// props: ['text, type']
+
 const props = defineProps({
-  text: String,
-  type: String
+  text: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    required: false,
+    default: 'primary'
+  }
 })
 
 const buttonClass = computed(() => {
   // return props.isPrimary ? 'primary' : 'secondary'
+  // return {
+  //   primary: props.type === 'primary',
+  //   secondary: props.type === 'secondary'
+  // }
   return {
-    primary: props.type === 'primary',
-    secondary: props.type === 'secondary'
+    [props.type]: true
   }
 })
 </script>
@@ -31,6 +43,6 @@ button {
 }
 
 .secondary {
-  @apply rounded-full px-5 py-3;
+  @apply rounded-full px-7 py-3;
 }
 </style>

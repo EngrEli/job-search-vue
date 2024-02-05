@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed left-0 top-0 flex h-16 w-full items-center justify-between border-b border-brand-gray-1 px-16 py-3"
+    class="fixed left-0 top-0 flex h-16 w-full items-center justify-between border-b border-brand-gray-1 bg-brand-white px-16 py-3 text-black"
   >
     <div class="flex items-center">
       <h1 class="mb-1 text-xl">
@@ -22,12 +22,13 @@
       </ul>
     </div>
 
-    <!-- Clicking the sign in button logs the user in -->
+    <!-- Clicking the sign in button logs the user in - sample case -->
     <ActionButton v-if="!isLoggedIn" @click="handleLogin" text="Sign in" type="primary" />
     <ProfileImage v-else />
   </header>
 
-  <ActionButton text="Search" type="secondary" />
+  <!-- I commented this out for future use only // primary and secondary button-->
+  <!-- <ActionButton text="Search" type="secondary" /> -->
 </template>
 
 <script setup>
