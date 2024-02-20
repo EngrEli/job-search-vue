@@ -11,17 +11,12 @@
       <!-- <div class="hero-right px-2">Hero image</div> -->
     </main>
 
-    <div class="searchform-container mx-auto mt-20 flex gap-[16px] px-16">
-      <SearchBar />
-
-      <ActionButton text="Search" type="secondary" />
-    </div>
+    <SearchBarFormComponent />
   </div>
 </template>
 
 <style scoped>
-.main-hero,
-.searchform-container {
+.main-hero {
   max-width: calc(1200px + 6rem);
 }
 .main-hero .design {
@@ -55,7 +50,7 @@
 </style>
 <script setup>
 import { ref, computed, onMounted, reactive, onBeforeUnmount } from 'vue'
-import SearchBar from './SearchBar.vue'
+import SearchBarFormComponent from './SearchBarFormComponent.vue'
 import ActionButton from './ActionButton.vue'
 
 const mainText = reactive(['Design', 'Code', 'Build', 'Create'])
