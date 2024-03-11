@@ -51,7 +51,7 @@
 <script setup>
 import { ref, computed, onMounted, reactive, onBeforeUnmount } from 'vue'
 import SearchBarFormComponent from './SearchBarFormComponent.vue'
-import ActionButton from './ActionButton.vue'
+import ActionButton from '../Shared/ActionButton.vue'
 
 const mainText = reactive(['Design', 'Code', 'Build', 'Create'])
 const currentIndex = ref(0)

@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import ActionButton from './ActionButton.vue'
+import ActionButton from '../Shared/ActionButton.vue'
 import ProfileImage from './ProfileImage.vue'
 
 const isLoggedIn = ref(false)

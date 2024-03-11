@@ -39,7 +39,7 @@
 
 <script setup>
 import { defineProps, ref } from 'vue'
-import ActionButton from './ActionButton.vue'
+import ActionButton from '../Shared/ActionButton.vue'
 
 const role = ref('')
 const location = ref('')
