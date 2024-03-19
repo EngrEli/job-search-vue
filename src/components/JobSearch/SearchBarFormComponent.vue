@@ -6,8 +6,13 @@
         <span class="flex w-[60px] items-center justify-center text-xl">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </span>
-        <input
+        <!-- <input
           type="text"
+          
+          
+          v-model="role"
+        /> -->
+        <TextInput
           placeholder="Software engineer"
           class="my-0.125rem ml-[-10px] h-[50px] w-[200px] rounded-3xl pl-[10px] focus:outline-none"
           v-model="role"
@@ -19,8 +24,13 @@
         <span class="flex w-[60px] items-center justify-center text-xl">
           <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
         </span>
-        <input
+        <!-- <input
           type="text"
+          placeholder="Los Angeles"
+          class="my-0.125rem ml-[-10px] h-[50px] w-[200px] rounded-3xl pl-[10px] focus:outline-none"
+          v-model="location"
+        /> -->
+        <TextInput
           placeholder="Los Angeles"
           class="my-0.125rem ml-[-10px] h-[50px] w-[200px] rounded-3xl pl-[10px] focus:outline-none"
           v-model="location"
@@ -40,6 +50,7 @@
 <script setup>
 import { defineProps, ref } from 'vue'
 import ActionButton from '../Shared/ActionButton.vue'
+import TextInput from '../Shared/TextInput.vue'
 
 const role = ref('')
 const location = ref('')
