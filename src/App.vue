@@ -5,7 +5,11 @@ import MainHero from './components/JobSearch/MainHero.vue'
 
 <template>
   <MainNav />
-  <MainHero />
+
+  <RouterLink to="/">Go to Home</RouterLink>
+  <RouterLink to="/about">Go to About</RouterLink>
+
+  <RouterView />
 </template>
 
 <style scoped></style>

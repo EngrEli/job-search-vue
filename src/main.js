@@ -2,6 +2,7 @@ import './assets/main.css'
 import '@/styles.css'
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -15,4 +16,4 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
 library.add(faMagnifyingGlass)
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
